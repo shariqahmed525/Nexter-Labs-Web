@@ -6414,7 +6414,7 @@ input::-moz-focus-inner {
 .section-header {
   text-align: center;
   position: relative;
-  margin-bottom: 3.6rem;
+  margin-bottom: 2rem;
   max-width: 960px;
 }
 .section-header.has-bottom-sep {
@@ -6522,7 +6522,7 @@ input::-moz-focus-inner {
   margin: 0;
   padding: 0;
   left: 40px;
-  top: 70%;
+  top: 54%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -6534,7 +6534,7 @@ input::-moz-focus-inner {
   padding: 0;
   outline: 0;
   border: none;
-  width: 115px;
+  width: 130px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -7302,7 +7302,7 @@ html.no-csstransitions .home-content__main {
   }
 }
 .s-services {
-  padding-top: 11.2rem;
+  padding-top: 8rem;
   padding-bottom: 13.2rem;
   background-color: #fff;
   color: #757575;
@@ -7383,7 +7383,7 @@ html.no-csstransitions .home-content__main {
 }
 @media only screen and (max-width: 600px) {
   .s-services {
-    padding-top: 12rem;
+    padding-top: 7rem;
   }
   .services-list .service-item:nth-child(n) {
     padding-right: 10px;
@@ -7416,21 +7416,30 @@ html.no-csstransitions .home-content__main {
   /* max-width: 1160px; */
   margin-top: -23.4rem;
 }
+.masonry{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  align-items: center;
+  height: unset !important;
+  justify-content: center;
+}
 .masonry:after {
   content: "";
   display: table;
   clear: both;
 }
 .masonry .grid-sizer,
-.masonry__brick {
+.masonry_brick {
   width: 400px;
   margin: 10px;
   /* width: 50%; */
 }
-.masonry__brick {
+/* .masonry__brick {
   float: left;
   padding: 0;
-}
+} */
 .item-folio {
   position: relative;
   overflow: hidden;
@@ -8147,7 +8156,7 @@ footer .row {
   padding: 0;
   outline: 0;
   border: none;
-  width: 200px;
+  width: 280px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
@@ -8306,6 +8315,11 @@ footer .row {
   .footer-subscribe #mc-form label {
     text-align: center;
   }
+  .client_wrapper_image{
+    object-fit: contain;
+    width: 130px;
+    height: 130px;
+  }
 }
 @media only screen and (max-width: 400px) {
   .graphics-image {
@@ -8332,6 +8346,16 @@ footer .row {
 
 .graphics-image {
   width: 350px;
+}
+
+.client_wrapper{
+  margin: 10px;
+}
+
+.client_wrapper_image{
+  object-fit: contain;
+  width: 150px;
+  height: 150px;
 }
 
 /* Old color */
