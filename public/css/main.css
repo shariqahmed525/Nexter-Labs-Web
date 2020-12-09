@@ -7416,7 +7416,7 @@ html.no-csstransitions .home-content__main {
   /* max-width: 1160px; */
   margin-top: -23.4rem;
 }
-.masonry{
+.masonry {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -7443,6 +7443,7 @@ html.no-csstransitions .home-content__main {
 .item-folio {
   position: relative;
   overflow: hidden;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 16px 0 rgba(0, 0, 0, 0.19);
 }
 .item-folio__thumb img {
   vertical-align: bottom;
@@ -7585,6 +7586,12 @@ html.no-csstransitions .home-content__main {
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
+}
+.client_text{
+  text-align: center;
+  width: 150px;
+  margin-top: 15px;
+  font-size: 24px;
 }
 @media only screen and (max-width: 800px) {
   .item-folio__title,
@@ -8315,7 +8322,7 @@ footer .row {
   .footer-subscribe #mc-form label {
     text-align: center;
   }
-  .client_wrapper_image{
+  .client_wrapper_image {
     object-fit: contain;
     width: 130px;
     height: 130px;
@@ -8348,11 +8355,11 @@ footer .row {
   width: 350px;
 }
 
-.client_wrapper{
+.client_wrapper {
   margin: 10px;
 }
 
-.client_wrapper_image{
+.client_wrapper_image {
   object-fit: contain;
   width: 150px;
   height: 150px;
