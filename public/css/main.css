@@ -7974,8 +7974,9 @@ html.no-csstransitions .home-content__main {
 .message-success {
   display: none;
   background: #111;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 2;
+  text-align: center;
   padding: 3rem;
   margin-bottom: 3.6rem;
   width: 100%;
@@ -7984,7 +7985,7 @@ html.no-csstransitions .home-content__main {
   color: #ff6163;
 }
 .message-success {
-  color: #2d566c;
+  color: #28a745;
 }
 .message-warning i,
 .message-success i {

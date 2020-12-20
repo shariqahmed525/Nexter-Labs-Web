@@ -192,13 +192,18 @@
         var sLoader = $(".submit-loader");
         $.ajax({
           type: "POST",
-          url: "inc/sendEmail.php",
-          data: $(form).serialize(),
+          url: "https://nexterlabs-email.herokuapp.com/",
+          data: {
+            name: $("#contactName").val(),
+            email: $("#contactEmail").val(),
+            subject: $("#contactSubject").val(),
+            message: $("#contactMessage").val()
+          },
           beforeSend: function() {
             sLoader.slideDown("slow");
           },
           success: function(msg) {
-            if (msg == "OK") {
+            if (msg?.status == "OK") {
               sLoader.slideUp("slow");
               $(".message-warning").fadeOut();
               $("#contactForm").fadeOut();
