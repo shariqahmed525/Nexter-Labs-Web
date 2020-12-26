@@ -210,7 +210,9 @@
               $(".message-success").fadeIn();
             } else {
               sLoader.slideUp("slow");
-              $(".message-warning").html(msg);
+              $(".message-warning").html(
+                "Something went wrong. Please try again."
+              );
               $(".message-warning").slideDown("slow");
             }
           },
