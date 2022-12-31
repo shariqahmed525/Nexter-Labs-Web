@@ -192,7 +192,7 @@
         var sLoader = $(".submit-loader");
         $.ajax({
           type: "POST",
-          url: "https://nexterlabs-email.herokuapp.com/",
+          url: "",
           data: {
             name: $("#contactName").val(),
             email: $("#contactEmail").val(),
